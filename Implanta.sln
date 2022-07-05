@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Implanta", "Implanta\Implanta.csproj", "{F5B84464-200F-4392-8E30-9A309AE3C137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CA3794EB-A36C-4BBA-82FF-C615A81C22A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implanta.Domain", "Implanta.Domain\Implanta.Domain.csproj", "{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{4510A017-550F-4D07-B0B4-5420E5A6392B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implanta.Infra", "Implanta.Infra\Implanta.Infra.csproj", "{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{FABFD79D-7DEC-4AEC-9469-2F366F9B30DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implanta.Service", "Implanta.Service\Implanta.Service.csproj", "{5AB834A0-6458-4291-9E20-F137B549BB73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B84464-200F-4392-8E30-9A309AE3C137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B84464-200F-4392-8E30-9A309AE3C137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B84464-200F-4392-8E30-9A309AE3C137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B84464-200F-4392-8E30-9A309AE3C137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB834A0-6458-4291-9E20-F137B549BB73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB834A0-6458-4291-9E20-F137B549BB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB834A0-6458-4291-9E20-F137B549BB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB834A0-6458-4291-9E20-F137B549BB73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B40C78EF-C992-4B80-A7FB-CC0A8E3732B6} = {CA3794EB-A36C-4BBA-82FF-C615A81C22A3}
+		{C61E8E56-FCF5-4CE3-8B41-2BB0F385323A} = {4510A017-550F-4D07-B0B4-5420E5A6392B}
+		{5AB834A0-6458-4291-9E20-F137B549BB73} = {FABFD79D-7DEC-4AEC-9469-2F366F9B30DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C03B6B3F-DBDD-4DD8-8173-85BE267B4920}
+	EndGlobalSection
+EndGlobal
