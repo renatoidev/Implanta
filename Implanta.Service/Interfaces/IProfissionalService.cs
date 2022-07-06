@@ -1,5 +1,4 @@
-﻿using Implanta.Models.Entities;
-using Implanta.Service.ViewModels;
+﻿using Implanta.Service.ViewModels;
 using Implanta.ViewModels;
 
 namespace Implanta.Service.Interfaces;
