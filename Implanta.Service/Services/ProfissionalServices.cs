@@ -130,7 +130,7 @@ public class ProfissionalServices : Notifiable <Notification>, IProfissionalServ
         return profissionais;
     }
 
-    public async Task<Profissional> AddProfissional(AddProfissionalViewModel model)
+    public async Task<ProfissionalResponseViewModel> AddProfissional(AddProfissionalViewModel model)
     {
         var numeroRegistro = _profissionalRepository.NumeroRegistro();
 
@@ -147,18 +147,34 @@ public class ProfissionalServices : Notifiable <Notification>, IProfissionalServ
         if (_profissionalRepository.ExisteNumeroRegistro(profissional.NumeroRegistro))
             AddNotification("NumeroRegistro","Número de Registro Inválido");
 
-        if (IsValid)
+        var response = new ProfissionalResponseViewModel();
+        
+        if (!IsValid)
         {
-            await _profissionalRepository.AddProfissional(profissional);
-            await _profissionalRepository.SaveChangesAsync();
-            return profissional;
-        }
+            foreach (var not in Notifications)
+                response.Errors.Add(not.Message);
 
-        return null;
+            return response;
+        }
+        
+        await _profissionalRepository.AddProfissional(profissional);
+        await _profissionalRepository.SaveChangesAsync();
+        
+        response.NomeCompleto = model.NomeCompleto;
+        response.Cep = model.Cep;
+        response.DataNascimento = model.DataNascimento;
+        response.Sexo = model.Sexo;
+        response.Ativo = model.Ativo;
+        response.Cep = model.Cep;
+        response.Cidade = model.Cidade;
+        response.ValorRenda = model.ValorRenda;
+        
+        return response;
     }
 
-    public async Task<Profissional> EditProfissional(int id, EditProfissionalViewModel model)
+    public async Task<ProfissionalResponseViewModel> EditProfissional(int id, EditProfissionalViewModel model)
     {
+        var response = new ProfissionalResponseViewModel();
         try
         {
             var profissional = await _profissionalRepository.GetProfissionalById(id);
@@ -178,19 +194,35 @@ public class ProfissionalServices : Notifiable <Notification>, IProfissionalServ
                 AddNotification("False", "Não foi possível editar profissional");
             }
 
-            if (IsValid)
+
+            if (!IsValid)
             {
-                await _profissionalRepository.EditProfissional(profissional);
-                await _profissionalRepository.SaveChangesAsync();
-                return profissional;
+                foreach (var not in Notifications)
+                    response.Errors.Add(not.Message);
+
+                return response;
             }
+
+            await _profissionalRepository.EditProfissional(profissional);
+            await _profissionalRepository.SaveChangesAsync();
+            
+            response.NomeCompleto = model.NomeCompleto;
+            response.Cep = model.Cep;
+            response.DataNascimento = model.DataNascimento;
+            response.Sexo = model.Sexo;
+            response.Ativo = model.Ativo;
+            response.Cep = model.Cep;
+            response.Cidade = model.Cidade;
+            response.ValorRenda = model.ValorRenda;
+
+            return response;
         }
         catch (Exception)
         {
             AddNotification("False", "Erro interno no servidor");
         }
         
-        return null;
+        return response;
     }
 
     public bool ValidaProfissional(dynamic model)

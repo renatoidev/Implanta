@@ -7,7 +7,7 @@
         }
 
         public Profissional(string nomeCompleto, 
-            string cpf, DateTime dataNascimento, string sexo, 
+            string cpf, DateTime dataNascimento, char sexo, 
             bool ativo, int numeroRegistro, string cep, string cidade, 
             decimal valorRenda)
         {
@@ -23,7 +23,7 @@
         }
 
         public Profissional(string nomeCompleto,
-            string cpf, DateTime dataNascimento, string sexo,
+            string cpf, DateTime dataNascimento, char sexo,
             bool ativo, string cep, string cidade,
             decimal valorRenda)
         {
@@ -42,7 +42,7 @@
         public string NomeCompleto { get; private set; }
         public string Cpf { get; private set; }
         public DateTime DataNascimento { get; private set; }
-        public string Sexo { get; private set; }
+        public char Sexo { get; private set; }
         public bool Ativo { get; private set; }
         public int NumeroRegistro { get; private set; }
         public string Cep { get; private set; }
@@ -51,7 +51,7 @@
         public DateTime DataCriacao { get; private set; } = DateTime.UtcNow;
 
         public void Update(string nomeCompleto,
-            string cpf, DateTime dataNascimento, string sexo,
+            string cpf, DateTime dataNascimento, char sexo,
             bool ativo, string cep, string cidade,
             decimal valorRenda)
         {

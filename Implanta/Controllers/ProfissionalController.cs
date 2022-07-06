@@ -51,8 +51,8 @@ public class ProfissionalController : ControllerBase
 
         var obj = await _profissionalService.AddProfissional(model);
 
-        if (obj is null)
-            return BadRequest(new ResultViewModel<string>("Erro interno no servidor"));
+        if (obj.Errors.Count > 0)
+            return BadRequest(new ResultViewModel<dynamic>(obj.Errors));
 
         return Ok(new ResultViewModel<dynamic>(obj));
     }
@@ -68,8 +68,8 @@ public class ProfissionalController : ControllerBase
 
         var obj = await _profissionalService.EditProfissional(id, model);
 
-        if (obj is null)
-            return BadRequest(new ResultViewModel<string>("Erro interno no servidor"));
+        if (obj.Errors.Count > 0)
+            return BadRequest(new ResultViewModel<dynamic>(obj.Errors));
 
         return Ok(new ResultViewModel<dynamic>(obj));
     }

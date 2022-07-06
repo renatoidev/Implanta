@@ -1,0 +1,17 @@
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Infra.deps.json
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Infra.runtimeconfig.json
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Infra.dll
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Infra.pdb
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Domain.dll
+D:\dev\Implanta\Implanta.Infra\bin\Debug\net6.0\Implanta.Domain.pdb
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.csproj.AssemblyReference.cache
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.AssemblyInfoInputs.cache
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.AssemblyInfo.cs
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.csproj.CoreCompileInputs.cache
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.csproj.CopyComplete
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.dll
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\refint\Implanta.Infra.dll
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.pdb
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\Implanta.Infra.genruntimeconfig.cache
+D:\dev\Implanta\Implanta.Infra\obj\Debug\net6.0\ref\Implanta.Infra.dll

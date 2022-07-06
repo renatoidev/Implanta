@@ -10,7 +10,7 @@ public interface IProfissionalService
     Task<List<GetProfissionalViewModel>> GetProfissionais();
     Task<List<GetProfissionalViewModel>> GetProfissionais(int de, int ate);
     Task<List<GetProfissionalViewModel>> GetProfissionaisAtivos(bool ativo);
-    Task<Profissional> AddProfissional(AddProfissionalViewModel addProfissionalViewModel);
-    Task<Profissional> EditProfissional(int id, EditProfissionalViewModel editProfissionalViewModel);
+    Task<ProfissionalResponseViewModel> AddProfissional(AddProfissionalViewModel addProfissionalViewModel);
+    Task<ProfissionalResponseViewModel> EditProfissional(int id, EditProfissionalViewModel editProfissionalViewModel);
     Task<bool> DeleteProfissional(int id);
 }

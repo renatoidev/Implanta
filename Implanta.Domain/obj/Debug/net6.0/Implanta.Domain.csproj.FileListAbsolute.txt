@@ -1,0 +1,12 @@
+D:\dev\Implanta\Implanta.Domain\bin\Debug\net6.0\Implanta.Domain.deps.json
+D:\dev\Implanta\Implanta.Domain\bin\Debug\net6.0\Implanta.Domain.dll
+D:\dev\Implanta\Implanta.Domain\bin\Debug\net6.0\Implanta.Domain.pdb
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.csproj.AssemblyReference.cache
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.AssemblyInfoInputs.cache
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.AssemblyInfo.cs
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.csproj.CoreCompileInputs.cache
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.dll
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\refint\Implanta.Domain.dll
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\Implanta.Domain.pdb
+D:\dev\Implanta\Implanta.Domain\obj\Debug\net6.0\ref\Implanta.Domain.dll
